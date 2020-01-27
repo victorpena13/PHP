@@ -1,15 +1,14 @@
 <?php
 
 
-
-function randomNumber() {
-    return $randomNumber = (rand(0,100) . "\n");
+if (argc == 2) {
+    $number = mt_rand($argv[1], $argv[2]);
+    fwrite(STDOUT, "guess a number between {$argv[1]} and {$argv[2]}");
+} else if (argc == 0) {
+    $number = mt_rand(1,100);
+    fwrite(STDOUT, "Guess a number between 1 and 100.  Press 0 to quit. ");
 }
 
-
-
-$number = mt_rand(1,100);
-fwrite(STDOUT, "Guess a number between 1 and 100.  Press 0 to quit. ");
 
 
 $answer = fgets(STDIN);
