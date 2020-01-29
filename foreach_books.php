@@ -22,10 +22,15 @@ $books = array(
 )
 );
 
-    $books;
-    foreach($books as $book => $value) {
-        echo "$book\n";
-        echo "published: {$value['published']}\n";
-        echo "author: {$value['author']}\n";
-        echo "pages: {$value['pages']}\n";
+
+
+    foreach ($books as $title => $book) {
+        if ($book['published'] > 1950) {
+            echo "title: $title\n";
+            echo "published: {$book['published']}\n";
+            echo "author: {$book['author']}\n";
+            echo "pages: {$book['pages']}\n";
+        }
     }
+
+
