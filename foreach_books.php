@@ -22,3 +22,17 @@ $books = array(
 )
 );
 
+function getTitle() {
+    global $books;
+    foreach($books as $book => $value) {
+        echo "$book\n";
+        echo "published: {$value['published']}\n";
+        echo "author: {$value['author']}\n";
+        echo "pages: {$value['pages']}\n";
+    }
+}
+
+
+
+
+getTitle();
