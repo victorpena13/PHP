@@ -24,3 +24,7 @@ foreach ($things as $index) {
         echo "$thing is scalar.\n";
     }
 }
+
+foreach ($things as $item) {
+    echo "$item\n";
+}
