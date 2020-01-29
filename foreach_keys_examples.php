@@ -31,3 +31,4 @@ foreach ($students as $student) {
         echo "Student's $key is $value\n";
     }
 }
+
