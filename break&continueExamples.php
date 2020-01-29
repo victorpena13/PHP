@@ -14,3 +14,17 @@ for ($i = 1; $i <= 10; $i++) {
     }
     echo "^ that is an odd number";
 }
+
+$numbers = array(1, 2, 3, 4, 5);
+// Loop 1
+foreach ($numbers as $key => $value) {
+    echo "{$value}\n";
+    // Loop 2
+    for ($i = 1; $i <= 10; $i++) {
+        if ($i == 2) {
+            echo "{$i}\n";
+            break 2;
+        }
+    }
+}
+echo "done!\n";
