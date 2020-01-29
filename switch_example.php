@@ -37,4 +37,7 @@ switch (gettype($value)) {
     case 'string':
         echo '$value is a string';
         break;
+    default:
+        echo '$value is not a string';
+        break;
 }
