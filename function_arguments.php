@@ -16,6 +16,10 @@ echo compare('Madonna', 'Lady Gaga', true);
 
 echo compare('10', 10, true);
 //results in false.
+//since the third argument is set to true it will check to
+// see if it the two values match in type and value and
+// since one is a string and the other is a number it
+// results in false.
 
 echo compare('10', 10, false);
 //results in true.
