@@ -7,14 +7,21 @@ function inspect($a) {
        case is_string($a):
            echo "$a is a string\n";
            break;
+       case is_array($a) && empty($a):
+           echo "Empty array\n";
+           break;
        case is_array($a):
-           echo "$a is an array\n";
+           echo "The value is an " . gettype($a) . "\n";
            break;
        case is_bool($a):
-           echo "$a is a bool\n";
+           if ($a == 1) {
+               echo "true\n";
+           } else if ($a == 0) {
+               echo "false\n";
+           }
            break;
        case is_null($a):
-           echo "$a is null\n";
+           echo "The value is NULL\n";
            break;
        case is_numeric($a):
            echo "$a is numeric\n";
