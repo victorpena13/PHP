@@ -1,45 +1,38 @@
 <?php
 
-fwrite(STDOUT, "Press Enter To Begin");
-$userInput = fgets(STDIN);
+
+$firstValue = "10";
+$secondValue = 3;
 
 
-if (argc == 0) {
-    fwrite(STDOUT, 'enter first value ');
-    $firstValue = fgets(STDIN);
+if(is_numeric($firstValue) && is_numeric($secondValue)) {
+    add($firstValue, $secondValue);
+    subtract($firstValue, $secondValue);
+    multiply($firstValue, $secondValue);
+    divide($firstValue, $secondValue);
+} else {
+    echo "Enter a numeric value.\n";
 }
 
-if(is_numeric($firstValue)) {
-    echo "hi";
-}
+
 
 function add($a, $b) {
-
-echo $a + $b;
-
+    echo $a + $b . "\n";
 }
 
-//function subtract($a, $b) {
-//    if (is_numeric($a) && is_numeric($b)) {
-//        echo $a - $b;
-//    }
-//}
-//
-//function multiply($a, $b)
-//{
-//    if (is_numeric($a) && is_numeric($b)) {
-//        echo $a * $b;
-//    }
-//}
-//
-//function divide($a, $b)
-//{
-//    if (is_numeric($a) && is_numeric($b)) {
-//        echo $a / $b;
-//    }
-//}
+function subtract($a, $b) {
+        echo $a - $b . "\n";
+}
 
-// Add code to test your functions here
+function multiply($a, $b)
+{
+        echo $a * $b . "\n";
+}
+
+function divide($a, $b)
+{
+        echo $a / $b . "\n";
+}
 
 
 
@@ -47,8 +40,6 @@ echo $a + $b;
 
 
 
-//add($firstValue, $secondValue);
-//subtract($firstValue, $secondValue);
-//multiply($firstValue, $secondValue);
-//divide($firstValue, $secondValue);
+
+
 
