@@ -28,6 +28,7 @@ echo compare('10', 10, false);
 
 
 
+
 function inspect($variable = null, $dump = true) {
     // Same as if ($dump == true) {...}
     if ($dump) {
