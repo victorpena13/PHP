@@ -44,5 +44,11 @@ $companies = [
         'Jean-Louis Gassée'
     ]
 ];
-print_r($names);
+//print_r($names);
+
+foreach ($companies as $companies => $companyName) {
+    print_r($companies . "\n");
+
+}
+
 
