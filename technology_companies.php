@@ -44,15 +44,18 @@ $companies = [
         'Jean-Louis Gassée'
     ]
 ];
-//print_r($names);
+print_r($names);
 
-//foreach ($companies as $companies => $companyName) {
-//    print_r($companies . "\n");
-//
-//}
+foreach ($companies as $companyName => $companyEmployees) {
+    print_r($companyName . "\n");
+
+}
 
 
 foreach ($companies as $index => $names) {
     sort($names);
     print_r($names);
 }
+
+    arsort($companies);;
+    print_r($companies);
