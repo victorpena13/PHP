@@ -46,9 +46,13 @@ $companies = [
 ];
 //print_r($names);
 
-foreach ($companies as $companies => $companyName) {
-    print_r($companies . "\n");
+//foreach ($companies as $companies => $companyName) {
+//    print_r($companies . "\n");
+//
+//}
 
+
+foreach ($companies as $index => $names) {
+    sort($names);
+    print_r($names);
 }
-
-
