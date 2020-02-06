@@ -44,18 +44,26 @@ $companies = [
         'Jean-Louis Gassée'
     ]
 ];
+//Add code to output the $companies array in its current form.
+
 print_r($names);
+
+//Sort the $companies array by company name and output the results.
 
 foreach ($companies as $companyName => $companyEmployees) {
     print_r($companyName . "\n");
 
 }
 
+//Sort the people in each company alphabetically. You will need to use a foreach loop and will need to reassign each inner array after sorting. Output the result.
 
 foreach ($companies as $index => $names) {
     sort($names);
     print_r($names);
 }
+
+//Sort the companies from "biggest" to "smallest". This may be easier than you think, but be sure you don't loose the company names!
+
 
     arsort($companies);;
     print_r($companies);
