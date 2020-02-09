@@ -9,7 +9,6 @@ $result = array_search($query, $names);
 
 
 function hasValue($result) {
-    global $names;
     if ($result >=0 && $result <= 4) {
         echo "TRUE";
 
