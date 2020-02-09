@@ -10,18 +10,11 @@ $result = array_search($query, $names);
 
 function hasValue($result) {
     global $names;
-    if ($result = 0) {
-        echo $names[$result] . "\n";
-    } else if ($result = 1) {
-        echo $names[$result] . "\n";
-    } else if ($result = 2) {
-        echo $names[$result] . "\n";
-    } else if ($result = 3) {
-        echo $names[$result] . "\n";
-    } else if ($result = 4) {
-        echo $names[$result] . "\n";
+    if ($result >=0 && $result <= 4) {
+        echo "TRUE";
+
     } else {
-        echo "IDK that name";
+        echo "FALSE";
     }
 }
 
