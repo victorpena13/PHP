@@ -4,17 +4,17 @@ $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
-$query = 'Dana';
-$result = array_search($query, $names);
+
 
 //Create a function that returns TRUE or FALSE if an
 //array value is found. Search for Tina and Bob in
 //$names. Make sure it works as expected.
+$query = 'Dana';
+$result = array_search($query, $names);
 
 function hasValue($result) {
     if ($result >=0 && $result <= 4) {
         echo "TRUE";
-
     } else {
         echo "FALSE";
     }
@@ -27,15 +27,17 @@ hasValue($result);
 //Use the 2 example arrays and make sure your solution
 //uses array_search().
 
+function numberOfValuesInCommon($array1, $array2) {
+    $count = 0;
 
-$answer = array_diff($names, $compare);
-print_r($answer);
-//result:
-//Array
-//(
-//    [1] => Dana
-//    [2] => Mike
-//    [4] => Adam
-//)
+    foreach($array1 as $value) {
+        if(ifValueExists($value,$array2)) {
+            $count++;
+        }
+    }
+    return $count;
+}
 
+
+echo "The number of values in common is: " . numberOfValuesInCommon($names, $compare) . PHP_EOL;
 
