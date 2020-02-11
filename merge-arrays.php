@@ -1,6 +1,6 @@
 <?php
 
-$names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
+$names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam', 'victor'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
@@ -27,4 +27,5 @@ echo "combined arrays: " . combine_arrays($names, $compare);
 //    [5] => Dana
 //    [6] => Mike
 //    [7] => Adam
+//    [8] => victor
 //)
