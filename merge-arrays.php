@@ -41,3 +41,12 @@ function numberOfValuesInCommon($array1, $array2) {
 
 echo "The number of values in common is: " . numberOfValuesInCommon($names, $compare) . PHP_EOL;
 
+function combine_arrays($array1, $array2) {
+
+    foreach($array1 as $value) {
+        if(!ifValueExists) {
+            array_push($value, $array2);
+        }
+    }
+}
+
