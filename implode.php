@@ -13,4 +13,4 @@ $physicistsStrng = implode('|', $physicistsArray);
 echo $physicistsStrng . "\n";
 
 // result:
-// ordon Freeman|Samantha Carter|Sheldon Cooper|Quinn Mallory|Bruce Banner|Tony Stark
+// Gordon Freeman|Samantha Carter|Sheldon Cooper|Quinn Mallory|Bruce Banner|Tony Stark

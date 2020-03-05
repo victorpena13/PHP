@@ -3,6 +3,8 @@
 $favoriteThings = array('Tacos', 'Pizza', 'Architecture', 'Software Development', 'Conversation');
 
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +12,10 @@ $favoriteThings = array('Tacos', 'Pizza', 'Architecture', 'Software Development'
 </head>
 <body>
 <h1>My Fav Things</h1>
-<ol>
+<tr>
     <?php foreach ($favoriteThings as $favoriteThing) { ?>
-        <li><?php echo $favoriteThing; ?></li>
+        <th><?php echo $favoriteThing; ?></th>
     <?php } ?>
-</ol>
+</tr>
 </body>
 </html>
